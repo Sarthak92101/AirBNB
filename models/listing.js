@@ -14,9 +14,11 @@ const listingSchema = new Schema({
       default: "default-image"
     },
     url: {
-      type: String,
-      default: "https://unsplash.com/photos/cozy-living-room-with-elegant-furniture-and-decor-AO6BYTEnlMo"
-    }
+  type: String,
+  default: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+}
+
+
   },
 
   price: Number,
