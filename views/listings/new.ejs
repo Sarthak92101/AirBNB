@@ -4,15 +4,15 @@
     <br>
   <h3>Create a new Listing</h3>
  
-  <form method="POST" action="/listings">
+  <form method="POST" action="/listings" novalidate class="needs-validation">
     <div class="mb-3">
       <label for="title" class="form-label">Title</label>
-      <input name="listing[title]" placeholder="Enter Title" type="text" class="form-control">
+      <input name="listing[title]" placeholder="Enter Title" type="text" class="form-control" required>
     </div>
 
     <div class="mb-3">
       <label for="description" class="form-label">Description</label>
-      <textarea name="listing[description]" type="text" class="form-control"></textarea>
+      <textarea name="listing[description]" type="text" class="form-control" required></textarea>
     </div>
 
 
@@ -30,13 +30,13 @@
 
     <div class="mb-3 col-md-8">
       <label for="country name" class="form-label">Country Name</label>
-      <input name="listing[country]" placeholder="Enter Country Name" type="text" class="form-control">
+      <input name="listing[country]" placeholder="Enter Country Name" type="text" class="form-control" required>
     </div>
     </div>
 
     <div class="mb-3">
       <label for="location" class="form-label">Location</label>
-      <input name="listing[location]" placeholder="Enter Title" type="text" class="form-control">
+      <input name="listing[location]" placeholder="Enter Title" type="text" class="form-control" required>
     </div>
 <br>
     <button class="btn btn-dark add-btn">Add</button>
